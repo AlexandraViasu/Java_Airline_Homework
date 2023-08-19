@@ -5,6 +5,6 @@ public class Flight {
     private Pilot pilot;
     private ArrayList<CabinCrewMember> cabinCrewMemberArrayList;
     private ArrayList<Passenger> passengers;
-    
+
 
 }

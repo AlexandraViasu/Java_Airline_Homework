@@ -1,20 +1,12 @@
-public enum CabinCrewMember {
-    CAPTAIN("First", "Ashely"),
-    COCAPTAIN("Second", "Olive"),
-    FLIGHTATTENDANT("Third", "George");
+public class CabinCrewMember extends CrewMember{
 
 
-    public String name;
-    private final String rank;
-
-
-   CabinCrewMember(String rank, String name) {
-       this.rank = rank;
-       this.name = name;
-   }
-
-
-    public String getRank() {
-        return rank;
+    public CabinCrewMember(String name, CrewRank rank) {
+        super(name, rank);
     }
+
+    public String announcement(String announcement){
+        return "If we can have your attention for a second..." + announcement;
+    }
+
 }

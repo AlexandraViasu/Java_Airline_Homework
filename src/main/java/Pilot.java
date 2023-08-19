@@ -1,13 +1,20 @@
 public class Pilot extends CabinCrewMember{
 
-    private String name;
-    private CabinCrewMember rank;
+
     private String licenseNumber;
 
     public Pilot(String name, String licenseNumber, CabinCrewMember rank) {
-        super(CabinCrewMember.rank());
-        this.name = name;
+        super(name, rank);
         this.licenseNumber = licenseNumber;
-        this.rank = CabinCrewMember;
+
     }
+
+    public String getLicenseNumber() {
+        return licenseNumber;
+    }
+
+    public String fly(){
+        return "Weeeeeeeee";
+    }
+
 }
