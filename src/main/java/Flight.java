@@ -7,18 +7,14 @@ public class Flight {
     private ArrayList<Passenger> passengers;
     private Plane plane;
     private String flightNumber;
-    private AirportID destinationAirport;
-    private AirportID departureAirport;
     private String departureTime;
 
-    public Flight(Plane plane, String flightNumber, AirportID destinationAirport, AirportID departureAirport, String departureTime){
+    public Flight(Plane plane, String flightNumber,  String departureTime){
         this.pilots = new ArrayList<Pilot>();
         this.crew = new ArrayList<CabinCrewMember>();
         this.passengers = new ArrayList<Passenger>();
         this.plane = plane;
         this.flightNumber = flightNumber;
-        this.destinationAirport = destinationAirport;
-        this.departureAirport = departureAirport;
         this.departureTime = departureTime;
     }
 
@@ -42,13 +38,6 @@ public class Flight {
         return flightNumber;
     }
 
-    public String getDestinationAirport() {
-        return destinationAirport.getCode();
-    }
-
-    public String getDepartureAirport() {
-        return departureAirport.getCode();
-    }
 
     public String getDepartureTime() {
         return departureTime;
